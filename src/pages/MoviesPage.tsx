@@ -1,7 +1,9 @@
 import MovieCard from "@/components/movie/MovieCard"
-import { movies } from "@/services/movie.service"
+import { useMovies } from "@/hooks/useMovies"
 
 function MoviesPage() {
+  const { data: movies = [] } = useMovies()
+
   return (
     <div className="min-h-screen bg-zinc-950 text-white p-10">
       <h1 className="text-4xl font-bold mb-2 text-center">

@@ -1,42 +1,20 @@
-const movies = [
-  {
-    id: 1,
-    title: "Interstellar",
-    rating: "⭐ 9.0",
-  },
-  {
-    id: 2,
-    title: "The Batman",
-    rating: "⭐ 8.5",
-  },
-  {
-    id: 3,
-    title: "Avengers: Endgame",
-    rating: "⭐ 8.8",
-  },
-]
+import MovieCard from "@/components/movie/MovieCard"
+import { movies } from "@/services/movie.service"
 
 function MoviesPage() {
   return (
     <div className="min-h-screen bg-zinc-950 text-white p-10">
-      <h1 className="text-4xl font-bold mb-8 text-center">
+      <h1 className="text-4xl font-bold mb-2 text-center">
         🎥 Catálogo de Películas
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-6">
-        {movies.map((movie) => (
-          <div
-            key={movie.id}
-            className="bg-zinc-900 border border-zinc-800 rounded-xl p-6 shadow-lg"
-          >
-            <h2 className="text-2xl font-semibold mb-2">
-              {movie.title}
-            </h2>
+      <p className="text-zinc-400 text-center mb-10">
+        Explora las películas disponibles y elige tu próxima función.
+      </p>
 
-            <p className="text-yellow-400">
-              {movie.rating}
-            </p>
-          </div>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
         ))}
       </div>
     </div>

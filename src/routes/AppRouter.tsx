@@ -3,6 +3,7 @@ import HomePage from "@/pages/HomePage"
 import MoviesPage from "@/pages/MoviesPage"
 import MovieDetailPage from "@/pages/MovieDetailPage"
 import MoviesApiPage from "@/pages/MoviesApiPage"
+import MovieApiDetailPage from "@/pages/MovieApiDetailPage"
 
 function AppRouter() {
   return (
@@ -11,9 +12,12 @@ function AppRouter() {
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movies/:id" element={<MovieDetailPage />} />
+
         <Route path="/movies-api" element={<MoviesApiPage />} />
+        <Route path="/movies-api/:id" element={<MovieApiDetailPage />} />
       </Routes>
     </BrowserRouter>
   )
 }
+
 export default AppRouter

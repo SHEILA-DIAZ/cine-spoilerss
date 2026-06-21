@@ -1,73 +1,115 @@
-# React + TypeScript + Vite
+# 🎬 Cine Spoilerss
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada con React, TypeScript y Vite para explorar películas mediante datos locales y consumo de una API externa utilizando TMDB (The Movie Database).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# 🚀 Tecnologías Utilizadas
 
-## React Compiler
+* React
+* TypeScript
+* Vite
+* React Router DOM
+* Axios
+* TanStack React Query
+* Tailwind CSS
+* Shadcn UI
+* TMDB API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# 📸 Evidencias de Desarrollo
 
-## Expanding the ESLint configuration
+## Evidencia 01: Instalación y Configuración de Shadcn UI
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Se realizó la instalación y configuración inicial de Shadcn UI para la construcción de componentes reutilizables dentro de la aplicación.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+![Evidencia 01](evidencias/evidencia-01-shadcn.png)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Evidencia 02: Configuración de Rutas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Se implementó React Router DOM para gestionar la navegación entre páginas y rutas dinámicas dentro del proyecto.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+![Evidencia 02](evidencias/evidencia-02-rutas.png)
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## Evidencia 03: Página Principal
+
+Implementación de la página Home con diseño inicial y acceso al catálogo de películas.
+
+![Evidencia 03](evidencias/evidencia-03-home-hero.png)
+
+---
+
+## Evidencia 04: Catálogo de Películas
+
+Visualización de películas utilizando componentes reutilizables y estructura basada en TypeScript.
+
+![Evidencia 04](evidencias/evidencia-04-catalogo-peliculas.png)
+
+---
+
+## Evidencia 05: Detalle de Película Local
+
+Implementación de rutas dinámicas para visualizar información detallada de una película.
+
+![Evidencia 05](evidencias/evidencia-05-detalle-pelicula.png)
+
+---
+
+## Evidencia 06: Implementación de React Query
+
+Configuración de TanStack React Query para la gestión eficiente del estado y consumo de datos.
+
+![Evidencia 06A](evidencias/evidencia-06-react-query-hook.png)
+
+![Evidencia 06B](evidencias/evidencia-06-react-query.png)
+
+---
+
+## Evidencia 07: Integración de Axios y React Query
+
+Se implementó Axios para realizar solicitudes HTTP y React Query para administrar la información obtenida desde servicios externos.
+
+![Evidencia 07](evidencias/evidencia-07-axios-react-query-api.png)
+
+---
+
+## Evidencia 08: Consumo de API TMDB
+
+Conexión exitosa con The Movie Database (TMDB) para obtener información real de películas.
+
+![Evidencia 08](evidencias/evidencia-08-tmdb-api.png)
+
+---
+
+## Evidencia 09: Catálogo Visual con Posters
+
+Visualización de posters, calificaciones y fechas de estreno obtenidas desde TMDB.
+
+![Evidencia 09](evidencias/evidencia-09-tmdb-posters.png)
+
+---
+
+## Evidencia 10: Detalle de Película desde TMDB
+
+Implementación del detalle completo de una película utilizando rutas dinámicas y consumo individual de la API TMDB.
+
+![Evidencia 10](evidencias/evidencia-10-detalle-tmdb.png)
+
+---
+
+# 📌 Funcionalidades Implementadas
+
+* Página principal (Home).
+* Catálogo de películas.
+* Detalle de película local.
+* Navegación mediante React Router.
+* Rutas dinámicas.
+* Consumo de API mediante Axios.
+* Gestión de datos con React Query.
+* Consumo de información real desde TMDB.
+* Visualización de posters y detalles de películas.
+* Arquitectura organizada por capas.
+

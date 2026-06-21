@@ -4,4 +4,5 @@ export interface Movie {
   rating: number
   image: string
   genre: string
+  description: string
 }

@@ -172,7 +172,7 @@ Conexión exitosa con The Movie Database (TMDB) para obtener información real d
 
 Visualización de posters, calificaciones y fechas de estreno obtenidas desde TMDB.
 
-![Evidencia 09]()
+![Evidencia 09](image-8.png)
 
 ---
 

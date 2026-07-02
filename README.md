@@ -124,7 +124,7 @@ Se implementó React Router DOM para gestionar la navegación entre páginas y r
 
 Implementación de la página Home con diseño inicial y acceso al catálogo de películas.
 
-![Evidencia 03]()
+![Evidencia 03](![alt text](image.png))
 
 ---
 

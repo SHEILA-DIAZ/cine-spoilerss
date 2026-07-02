@@ -1,43 +1,29 @@
+import MovieCard from "../components/ui/MovieCard"
+import { movies } from "../data/movies"
+
 export default function MoviesPage() {
-  const movies = [
-    {
-      id: 1,
-      title: "Interstellar",
-      rating: 9.0,
-    },
-    {
-      id: 2,
-      title: "The Batman",
-      rating: 8.5,
-    },
-    {
-      id: 3,
-      title: "Avengers: Endgame",
-      rating: 8.8,
-    },
-  ]
-
   return (
-    <main className="min-h-screen bg-[#08090b] py-8">
-      <section className="mx-auto w-full max-w-[430px] px-4">
-        <h1 className="mb-6 text-center text-3xl font-bold text-white">
-          🎥 Catálogo de Películas
-        </h1>
+    <main className="min-h-screen bg-[#08090b] px-6 py-14 text-white">
+      <section className="mx-auto max-w-6xl">
+        <div className="mb-10 text-center">
+          <p className="mb-3 text-sm font-bold uppercase tracking-[0.3em] text-yellow-400">
+  Ahora en cartelera
+</p>
 
-        <div className="space-y-5">
+<h1 className="text-5xl font-black">
+  Catálogo de Películas
+</h1>
+
+<p className="mx-auto mt-4 max-w-2xl text-zinc-400 leading-8">
+  Descubre los estrenos más esperados, los clásicos que marcaron generaciones
+  y las películas más populares del momento. Encuentra tu próxima función y
+  vive una experiencia única en la pantalla grande.
+</p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
           {movies.map((movie) => (
-            <article
-              key={movie.id}
-              className="rounded-lg border border-zinc-800 bg-[#1c1c20] p-6"
-            >
-              <h2 className="text-xl font-bold text-white">
-                {movie.title}
-              </h2>
-
-              <p className="mt-3 text-sm font-bold text-yellow-400">
-                ⭐ {movie.rating}
-              </p>
-            </article>
+            <MovieCard key={movie.id} movie={movie} />
           ))}
         </div>
       </section>

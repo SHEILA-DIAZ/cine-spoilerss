@@ -132,7 +132,7 @@ Implementación de la página Home con diseño inicial y acceso al catálogo de 
 
 Visualización de películas utilizando componentes reutilizables y estructura basada en TypeScript.
 
-![Evidencia 04]()
+![Evidencia 04](![alt text](image-2.png))
 
 ---
 

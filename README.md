@@ -116,7 +116,7 @@ Se realizó la instalación y configuración inicial de Shadcn UI para la constr
 
 Se implementó React Router DOM para gestionar la navegación entre páginas y rutas dinámicas dentro del proyecto.
 
-![Evidencia 02]()
+![Evidencia 02](evidencias/evidencia02.png)
 
 ---
 

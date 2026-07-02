@@ -124,7 +124,7 @@ Se implementó React Router DOM para gestionar la navegación entre páginas y r
 
 Implementación de la página Home con diseño inicial y acceso al catálogo de películas.
 
-![Evidencia 03](![alt text](image.png))
+![Evidencia 03](image.png)
 
 ---
 
@@ -132,7 +132,7 @@ Implementación de la página Home con diseño inicial y acceso al catálogo de 
 
 Visualización de películas utilizando componentes reutilizables y estructura basada en TypeScript.
 
-![Evidencia 04](![alt text](image-2.png))
+![Evidencia 04](image-2.png)
 
 ---
 

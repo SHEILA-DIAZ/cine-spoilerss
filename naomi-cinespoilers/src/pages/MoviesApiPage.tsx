@@ -1,6 +1,6 @@
 import { useMovies } from "../services/movie-service"
 
-type ApiMovie = {
+type Movie = {
   id: number
   title: string
 }
@@ -11,7 +11,7 @@ export default function MoviesApiPage() {
   if (isLoading) {
     return (
       <main className="min-h-screen bg-[#08090b] p-8 text-white">
-        Cargando películas desde API...
+        Cargando películas...
       </main>
     )
   }
@@ -19,23 +19,25 @@ export default function MoviesApiPage() {
   if (isError) {
     return (
       <main className="min-h-screen bg-[#08090b] p-8 text-white">
-        No se pudo obtener la información desde el servicio externo.
+        Error al obtener la información.
       </main>
     )
   }
 
   return (
     <main className="min-h-screen bg-[#08090b] p-8 text-white">
-      <h1 className="mb-6 text-3xl font-black">🎬 Películas desde API</h1>
+      <h1 className="mb-8 text-3xl font-black">
+        🎬 Películas desde API
+      </h1>
 
       <div className="space-y-3">
-        {data?.slice(0, 10).map((movie: ApiMovie) => (
-          <article
+        {data?.map((movie: Movie) => (
+          <div
             key={movie.id}
-            className="rounded-md bg-[#18191d] px-4 py-3 text-sm"
+            className="rounded-lg bg-[#18191d] px-5 py-4"
           >
             {movie.title}
-          </article>
+          </div>
         ))}
       </div>
     </main>

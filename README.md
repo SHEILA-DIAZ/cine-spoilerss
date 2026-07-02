@@ -164,7 +164,7 @@ Se implementó Axios para realizar solicitudes HTTP y React Query para administr
 
 Conexión exitosa con The Movie Database (TMDB) para obtener información real de películas.
 
-![Evidencia 08]()
+![Evidencia 08](image-7.png)
 
 ---
 

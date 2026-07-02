@@ -1,8 +1,11 @@
 import axios from "axios"
 
 const api = axios.create({
-  baseURL: "https://jsonplaceholder.typicode.com",
-  timeout: 5000,
+  baseURL: "https://api.themoviedb.org/3",
+  params: {
+    api_key: import.meta.env.VITE_TMDB_API_KEY,
+    language: "es-ES",
+  },
 })
 
 export default api

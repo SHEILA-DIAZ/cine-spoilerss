@@ -140,17 +140,15 @@ Visualización de películas utilizando componentes reutilizables y estructura b
 
 Implementación de rutas dinámicas para visualizar información detallada de una película.
 
-![Evidencia 05](![alt text](image-3.png))
-![Evidencia 05](![alt text](image-4.png))
+![Evidencia 05](image-3.png)
+![Evidencia 05](image-4.png)
 ---
 
 ## Evidencia 06: Implementación de React Query
 
 Configuración de TanStack React Query para la gestión eficiente del estado y consumo de datos.
 
-![Evidencia 06A]()
-
-![Evidencia 06B]()
+![Evidencia 06A](image-5.png)
 
 ---
 

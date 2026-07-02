@@ -156,7 +156,7 @@ Configuración de TanStack React Query para la gestión eficiente del estado y c
 
 Se implementó Axios para realizar solicitudes HTTP y React Query para administrar la información obtenida desde servicios externos.
 
-![Evidencia 07]()
+![Evidencia 07](image-6.png)
 
 ---
 

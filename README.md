@@ -16,7 +16,7 @@ Aplicación web desarrollada con React, TypeScript y Vite para explorar películ
 * Shadcn UI
 * TMDB API
 
-# 📸 Evidencias de Desarrollo
+# 📸 Evidencias de Sheila Diaz
 
 ## Evidencia 01: Instalación y Configuración de Shadcn UI
 
@@ -140,8 +140,8 @@ Visualización de películas utilizando componentes reutilizables y estructura b
 
 Implementación de rutas dinámicas para visualizar información detallada de una película.
 
-![Evidencia 05]()
-
+![Evidencia 05](![alt text](image-3.png))
+![Evidencia 05](![alt text](image-4.png))
 ---
 
 ## Evidencia 06: Implementación de React Query

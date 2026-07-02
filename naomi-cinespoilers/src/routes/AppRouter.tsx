@@ -12,6 +12,7 @@ export default function AppRouter() {
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
         <Route path="/movies-api" element={<MoviesApiPage />} />
+        <Route path="/movies-api/:id" element={<MovieDetailPage />} />
         <Route path="/movies/:id" element={<MovieDetailPage />} />
       </Routes>
     </BrowserRouter>

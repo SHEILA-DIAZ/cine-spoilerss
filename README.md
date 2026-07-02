@@ -180,7 +180,7 @@ Visualización de posters, calificaciones y fechas de estreno obtenidas desde TM
 
 Implementación del detalle completo de una película utilizando rutas dinámicas y consumo individual de la API TMDB.
 
-![Evidencia 10]()
+![Evidencia 10](image-9.png)
 
 ---
 
